@@ -1,0 +1,10 @@
+/*.addpost_checkbox {
+    display: flex;
+    gap: 0.3rem;
+    width: fit-content;
+  }
+  
+  .cho_pic label {
+    margin-bottom: 0.3rem;
+    display: block;
+  }

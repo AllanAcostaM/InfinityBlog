@@ -1,0 +1,30 @@
+
+/* .post_author {
+    background: var(--color-primary-light);
+    width: fit-content;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .post_author_wrapper {
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.4rem;
+  }
+  
+  .post_author_wrapper:hover {
+    background: var(--color-gray-700);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .post_author_img {
+    width: 2.6rem;
+    aspect-ratio: 1/1;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    border: 2px solid var(--color-white);
+    border-radius: var(--card-border-radius-4);
+  } 
+  

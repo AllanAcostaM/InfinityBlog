@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+}
+
+:root {
+  --color-primary: #6f6af8;
+  --color-primary-light: hsl(242, 91%, 69%, 18%);
+  --color-primary-variant: #5854c7;
+  --color-red: #da0f3f;
+  --color-red-light: hsl(346, 87%, 46%, 15%);
+  --color-green: #00c476;
+  --color-green-light: hsl(156, 100%, 38%, 15%);
+  --color-gray-900: #1e1e66;
+  --color-gray-700: #2d2b7c;
+  --color-gray-300: rgba(242, 242, 254, 0.3);
+  --color-gray-200: rgba(242, 242, 254, 0.7);
+  --color-white: #f2f2fe;
+  --color-bg: #0f0f3e;
+
+  --transition: all 300ms ease;
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --form-width: 40%;
+
+  --card-border-radius-1: 0.3rem;
+  --card-border-radius-2: 0.5rem;
+  --card-border-radius-3: 0.8rem;
+  --card-border-radius-4: 2rem;
+  --card-border-radius-5: 5rem;
+}
+
+body {
+  background: var(--color-bg);
+
+  background: var(--color-bg) url("./images/bg_texture1.png");
+  /* background: var(--color-bg) url("./src/images/bg-texture.png"); */
+
+  font-family: "Poppins", sans-serif;
+  color: var(--color-gray-200);
+  line-height: 1.3;
+  font-size: 0.9rem;
+  /* overflow-x: hidden; */
+}
+
+.container {
+  width: var(--container-width-lg);
+  max-width: 1800px;
+  margin-inline: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+section {
+  margin-top: 7rem;
+}
+
+a {
+  color: var(--color-white);
+  transition: var(--transition);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--color-white);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.category_btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  /*width: fit-content;
+  */
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.category_btn:hover {
+  color: var(--color-white);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: var(--color-primary);
+  border-radius: 0.4rem;
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn.sm {
+  padding: 0.3rem 0.5rem;
+}
+
+.btn.danger {
+  background-color: var(--color-red);
+}
+
+.btn.danger:hover {
+  background: black;
+  color: var(--color-white) !important;
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg) !important;
+}
+
+/* REACT QUILL */
+
+/* .quill {
+  border-color: red !important;
+  border-radius: .8rem !important;
+  -webkit-border-radius: .8rem !important;
+  -moz-border-radius: .8rem !important;
+  -ms-border-radius: .8rem !important;
+  -o-border-radius: .8rem !important;
+} */
+
+.ql-editor {
+  overflow: scroll;
+  background: var(--color-gray-900);
+  height: 8rem !important;
+  color: white !important;
+}
+
+.ql-toolbar {
+  /* background: #f4f4f4; */
+  border-radius: 8px 8px 0 0;
+}
+
+/* Change toolbar icons to white */
+.ql-toolbar button .ql-stroke,
+.ql-toolbar .ql-picker-label .ql-stroke,
+.ql-toolbar .ql-picker-item .ql-stroke {
+  stroke: white !important; /* Change icon color */
+}
+
+/* Change filled icons (like list bullets) to white */
+.ql-toolbar button .ql-fill,
+.ql-toolbar .ql-picker-label .ql-fill,
+.ql-toolbar .ql-picker-item .ql-fill {
+  fill: white !important;
+  transition: var(--transition);
+}
+
+
+/* Hover effect: Slightly dim the icons */
+.ql-toolbar button:hover .ql-stroke,
+.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-toolbar .ql-picker-item:hover .ql-stroke {
+  stroke: #007bff !important;
+}
+
+.ql-toolbar button:hover .ql-fill,
+.ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-toolbar .ql-picker-item:hover .ql-fill {
+  fill: #007bff !important;
+}
+
+.ql-snow .ql-picker {
+  color: white !important;
+}
+
+.ql-snow .ql-picker-options .ql-picker-item {
+  color: black;
+}
