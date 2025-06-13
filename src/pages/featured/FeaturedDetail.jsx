@@ -49,7 +49,7 @@ const FeaturedDetail = () => {
 
         <h2>Key Features of InfinityBlog</h2>
         <p>
-          SamVic Blog offers an array of features tailored for an enhanced
+          Infinity Blog offers an array of features tailored for an enhanced
           blogging experience:
         </p>
         <ul>
@@ -73,7 +73,7 @@ const FeaturedDetail = () => {
           </li>
         </ul>
 
-        {/* About SamVic Codes */}
+        {/* About Blog infinity Codes */}
         <h2>About the Creator: Jossep Acosta</h2>
         <p>
           I'm Jossep Acosta, a software developer passionate about crafting
